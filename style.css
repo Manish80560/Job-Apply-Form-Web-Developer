@@ -1,0 +1,287 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #004aad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #004aad;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 5px solid #004aad;
+  padding-left: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  width: auto;
+  background: #004aad;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #003080;
+}
+
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* ✅ Responsive */
+/* @media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}  */
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Body === */
+body {
+  background: linear-gradient(120deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* === Main Form === */
+main {
+  width: 100%;
+  max-width: 700px;
+}
+
+form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+h2 {
+  margin: 15px 0;
+  color: #34495e;
+  border-left: 4px solid #2980b9;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* === Labels and Inputs === */
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 6px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Focus Effects */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(41, 128, 185, 0.4);
+  outline: none;
+}
+
+/* === Radio & Checkbox === */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+  accent-color: #2980b9; /* supported in modern browsers */
+}
+
+/* === Buttons === */
+button {
+  padding: 12px 20px;
+  margin: 10px 10px 0 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background: #2980b9;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
+}
+
+button[type="reset"] {
+  background: #e74c3c;
+  color: #fff;
+}
+
+button[type="reset"]:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(192, 57, 43, 0.4);
+}
+
+/* === Footer === */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #2c3e50;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* === Social Links === */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  font-size: 17px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+/* Specific Colors */
+.social-links a .fa-linkedin { color: #0077b5; }
+.social-links a .fa-github { color: #333; }
+.social-links a .fa-instagram { color: #e1306c; }
+.social-links a .fa-envelope { color: #d44638; }
+.social-links a .fa-facebook { color: #1877f2; }
+
+/* === Animations === */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  form {
+    padding: 15px 20px;
+  }
+
+  .social-links a {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+}

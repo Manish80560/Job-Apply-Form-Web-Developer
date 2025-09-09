@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applicatiion Form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Job Application Form : Senior Web Developer</h1>
+        <p>Thank you for your intereset in joining our team.Please Fill out the application below.</p>
+    </header>
+    <hr />
+
+
+
+    <main>
+        <form action="">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name :</label>
+        <br>
+        <input type="text" name="fullName" id="fullName" required >
+        <br> <br>
+
+        <label for="email">E - Mail:</label>
+        <br>
+        <input type="email" name="email" id="email" required>
+        <br> <br>
+
+        <label for="phone">Phone :</label>
+        <br>
+        <input type="tel" name="phone" id="phone" required>
+        <br> <br>
+
+        <label for="profileURL">LinkedIn Profile URL :</label>
+        <br>
+        <input type="url" name="profileURL" id="profileURL" required>
+        <br> <br>
+
+        <hr />
+
+        <h2>Professional Experience</h2>
+         <label for="resume"> Upload Your Resume (PDF or DOCX) :</label>
+         <br>
+         <input type="file" name="resume" id="resume" accept=".pdf,.docx" required>
+        <br> <br>
+
+        <label for="info">Cover Letter :</label>
+        <br>
+        <textarea name="info" id="info" rows="8" cols="20"></textarea>
+        <br><br>
+
+        <label for="exp">Year Of Professional Experience : </label>
+        <br>
+        <input type="number" name = "experience" id="exp" required>
+        <br><br>
+        <label for="joining">Earliest Possible Start Date </label>
+        <br>
+        <input type="date" name="joining" id="joining">
+        <hr/>
+
+        <h2>Skill & Availability</h2>
+            <label>Primary Skill (Choose one)</label>
+            <br>
+            <input type="radio" name="skill" id="Frontend" value="Frontend Development">
+            <label for="Frontend">Frontend Development</label>
+            <br>
+            <input type="radio" name="skill" id="Backend" value="Backend Development">
+            <label for="Backend">Backend Development</label>
+            <br>
+            <input type="radio" name="skill" id="Full-Stack" value="Full-Stack Development">
+            <label for="Full-Stack">Full-Stack Development</label>
+            <br><br>
+
+
+            <label>Additional Skill (Select all that apply)</label>
+            <br>
+            <input type="checkbox" name="skills[]" id="react" value="React">
+            <label for="react">React</label>
+            <br>
+            <input type="checkbox" name="skills[]" id="node" value="Node">
+            <label for="node">Node.js</label>
+            <br>
+            <input type="checkbox" name="skills[]" id="database" value="Database">
+            <label for="database">Database Management</label>
+            <br>
+            <input type="checkbox" name="skills[]" id="cloud" value="Cloud/Devops">
+            <label for="cloud">Cloud/Devops</label>
+            <br><br>
+
+            <label for="">Preffered Work Type</label>
+            <br>
+            <select name="time" id="time">
+            <option value="">Select-Time</option>
+            <option value="fulltime">Full-Time</option>
+            <option value="parttime">Part-Time</option>
+            <option value="nightshift">Night-Shift</option>
+            </select>
+
+
+        <hr/>
+        <h2>Final Confirmation</h2>
+        <input type="checkbox" id="check" value = "status">
+           <label for="check" >I am legally authorized to work in this country</label>
+           <br><br>
+
+           <label for="from">How did you hear about us </label>
+           <br>
+           <input type="text" name="from" id="from" placeholder="eg.LinkedIn , Company" required><br><br>
+
+           <button type="submit">Submit Application</button>
+           <button type="reset">Clear Form</button>
+
+           </form>
+
+    </main>
+
+         <!-- By Me -->
+    <footer>
+      <p>Copyright &copy; | All Right Reserved </p>  
+        <!-- Social Media Icons -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/manish-668636346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app target="_blank">
+     <i class="fa-brands fa-square-linkedin">LinedIn</i>
+    </a>
+    <a href="https://github.com/Manish80560" target="_blank">
+      <i class="fab fa-github">GitHub</i>
+    </a>
+    <a href="https://Instagram.com/its_manish_kasaudhan_143" target="_blank">
+       <i class="fa-brands fa-square-instagram">Instagram</i>
+    </a>
+    <a href="mailto:mskasaudhan21@gmail.com">
+      <i class="fas fa-envelope">E-mail</i>
+    </a>
+    <a href="https://facebook.com/Manish Kasaudhan" target="_blank">
+     <i class="fa-brands fa-facebook">Facebook</i>
+    </a>
+    
+  </div>
+
+    </footer>
+      
+       <!-- By ChatGTP  -->
+        <!-- <footer>
+  <p>Copyright &copy; | All Right Reserved </p>  
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/manish-668636346" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Manish80560" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://instagram.com/its_manish_kasaudhan_143" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="mailto:mskasaudhan21@gmail.com">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://facebook.com/ManishKasaudhan" target="_blank">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+  </div>
+</footer> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- http://127.0.0.1:3000/Form/index.html?fullName=Manish&email=mskasaudhan21%40gmail.com&phone=8795291105&profileURL=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmanish-668636346%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app&resume=Review2.docx&info=Hi%2C+My+Name+is+Manish%2C+and+today+I+am+here+to+discuss+my+job+application+project&experience=5&joining=2025-09-30&skill=Full-Stack+Development&skills%5B%5D=React&skills%5B%5D=Node&skills%5B%5D=Database&skills%5B%5D=Cloud%2FDevops&time=parttime&from=LinkedIn -->
